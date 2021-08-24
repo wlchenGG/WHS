@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML 基本结构</title>
+    </head>
+    <body>
+        HTML 主体内容部分。
+
+        <h1>标题由标签 h1 ~ h6 定义</h1>
+        <h1>第一级标题：h1</h1>
+        <h2>第二级标题：h2</h2>
+        <h3>第三级标题：h3</h3>
+        <h4>第四级标题：h4</h4>
+        <h5>第五级标题：h5</h5>
+        <h6>第六级标题：h6</h6>
+
+        <p> hr/ 标签在当前位置插入一条水平线</p>
+        <hr title="一条水平线" color="blue"/>
+
+        <h1>段落由标签 p 定义</h1>
+        <p>第一个段落：p</p>
+        <p>第二个段落：p</p>
+        <p>第三个段落：p</p>
+        <p>第四个段落：p</p>
+
+        <h1>HTML头部 head</h1>
+        <p>在HEAD中，可以插入title、style、meta、link、script、noscript、base。</p>
+        <p>title：定义html文档的标题。</p>
+        <p>base：定义了html文档中所有链接的默认目标地址，其格式和 a 标签一致。</p>
+        <p>meta：文档的描述、关键词、作者、字符集等。</p>
+
+        <h1 id="html link">HTML链接由标签 a 定义</h1>
+        <p>这是一个<a href="https://www.runoob.com">链接</a>。</p>
+        <p>链接内容可以是字、词、一组词、一幅图等。</p>
+
+        <h2>HTML链接 — target属性</h2>
+        <p>target属性用来指出被链接的文档在何处显示。<br/>
+        当其值设为&quot;_blank&quot;时，会在新窗口打开链接。<br/>
+        当其值设为&quot;_top&quot;时，链接会跳出框架。
+        </p>
+
+        <h2>HTML链接 — id属性</h2>
+        <p>id属性相当于为元素设置一个书签，且可以通过链接（#id）进行引用。</p>
+        <a href="#html link">链接到当前文档的 HTML链接——h1元素</a>
+        <br/>
+        <a href="https://wlchengg.github.io/blog_by_hugo_loveit/#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C">链接到另一个页面的某个元素</a>
+
+        <h2>图片链接</h2>
+        <p>将链接元素的内容部分替换文图片元素即可。</p>
+        <a href="https://www.runoob.com">
+            <img border"3" src="../images/logo.png">
+        </a>
+
+        <h2>发送邮件链接</h2>
+        <a href="mailto:someone@example.com?Subject=Hello%20Runoob" target="_top">发送邮件</a>
+
+        <!--显示图像-->
+        <h1>图像由标签 img/ 来定义</h1>
+
+        <img loading="lazy" src="../images/logo.png" width="256" height="39" />
+
+
+        <h1>HTML 元素</h1>
+        <p>HTML 元素以开始标签（opening tag）起始，以结束标签（closing tag）终止；</p>
+
+        <p>大多数 HTML 元素可以嵌套使用；</p>
+
+        <h2>HTML空元素</h2>
+        <p>开始标签既标记开始，也标记结束。为了与XHTML以及其他未来版本HTML兼容，应该加上反斜线。</p>
+
+        <h1>HTML 属性</h1>
+        <p>属性以键值对的形式出现：<b>属性名="值"</b></p>
+        <p>大多数元素支持的属性：class、id、style、title；</p>
+
+        <h1>HTML注释</h1>
+        <!--这是一个注释，在浏览器中不可见。-->
+        <p>注释下的一段话。</p>
+
+        <h1>HTML 折行（换行不分段）：br</h1>
+        <p>这个例子<br/>演示了<br/>的效果。</p>
+        <p><b>注意：</b>浏览器会忽略HTML代码中多余的空白<br/>字符（空行、空格等），仅保留一各空格。
+            <br/>因此，要控制显示格式，应该通过标签属性等来进行控制。</p>
+        
+        <!--文本格式化-->
+        <h1>文本格式化</h1>
+        
+        <h2>基本字体字形</h2>
+        <p><b>这是一个加粗的句子。</b></p>
+        <br/> 
+        <p><strong>这是一个加重的句子。</strong></p>
+        <br/> 
+        <p><i>这是一个斜体的句子。</i></p>
+        <br/> 
+        <p><em>这是一个倾斜的句子。</em></p>
+        <br/> 
+        <p><big>这是一个大字号的句子。</big></p>
+        <br/> 
+        <p><small>这是一个小字号的句子。</small></p>
+        <br/> 
+        <p>这是一个带<sub>下标</sub>的句子。</p>
+        <br/>
+        <p>这是一个带<sup>上标</sup>的句子。</p>
+
+        <h2>预格式标签：pre</h2>
+        <pre>
+            标签中的文字
+                按照    原格式
+            输出，不会去除多余空白。
+        </pre>
+
+        <h2>“计算机输出”标签</h2>
+        <p>常用于显示计算机/编程代码：</p>
+        <br/>
+        <code>code标签文本：计算机输出</code>
+        <br/>
+        <kbd>kbd标签文本：键盘输入</kbd>
+        <br/>
+        <tt>tt标签文本：打字机输入</tt>
+        <br/>
+        <samp>samp标签文本：代码样本</samp>
+        <br/>
+        <var>var标签文本：计算机变量</var>
+
+        <h2>地址标签：address</h2>
+        <address>
+            转载自<a href="https://www.runoob.com">菜鸟教程</a><br/>
+            访问我：<br/>
+            wlchengg.github.io<br/>
+            Chuangxin 195, Hunnan<br/>
+            China
+        </address>
+
+        <h2>缩写标签</h2>
+        <p>一个abbr标签：<abbr title="vide supra">v.s.</abbr></p>
+        <p>一个acronym标签：<acronym title="World Wide Web">WWW</acronym></p>
+        <p>当鼠标位于文本上时，会显示出相应的全称。</p>
+        <h2>块引用：q</h2>
+        <p>
+            鲁迅说过：
+            <q>没那金刚钻，就别揽那瓷器活儿</q>。
+        </p>
+
+        <h2>删除字（del）和插入字（ins）效果</h2>
+        <p>这是一段文字，有几个<del>被删除的字</del>，还有<br/>
+            几个<ins>被插入的字</ins>。</p>
+    </body>
+</html>
