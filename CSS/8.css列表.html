@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>演示 CSS 列表相关设置</title>
+    <link rel="stylesheet" type="text/css" href="#">
+    <link rel="shortcut icon" href="./images/avatar.png">
+    <style type="text/css">
+      body {
+        background-color: aliceblue;
+        /* font-size:100%; */
+      }
+      ul.imgli { 
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        }
+      ul.imgli li { 
+        background-image: url('./images/li.png');
+        background-repeat: no-repeat;
+        background-position: 4px 8px;
+        padding-left: 20px;
+      }
+    </style>
+    <body>
+      <h1>CSS 列表相关样式<sup><a href="https://www.runoob.com/css/css-list.html" target="_blank">[1]</a></sup></h1>
+      <h2>列表项标记</h2>
+      <p>通过属性 list-style-type 控制，可取值：</p>
+      <ul>
+        <li> 无序列表
+          <ul>
+            <li>'circle'、'square'</li>
+          </ul>
+        </li>
+        <li> 有序列表
+          <ul>
+            <li>'upper-roman'、'lower-alpha'、'cjk-ideographic'、'decimal'、'lower-greek' 等</li>
+          </ul>
+        </li>
+      </ul>
+      <h2>用图像作为列表项标记</h2>
+      <p>通过属性 list-style-image: url('li.png') 控制：</p>
+      <ul style="list-style-image: url('./images/li.png');">
+        <li>第一项</li>
+        <li>第二项</li>
+      </ul>
+      <b>但是这种方式不兼容所有浏览器，因此可以用以下设置背景图像的方式，手动设置列表项图像标记：</b>
+      <div style="display: block; border: solid 1px; width: 100%;">
+        <pre "><code style="font-family: 'Courier New', Courier, monospace; color: red">
+  ul { 
+       list-style-type: none;
+       padding: 0px;
+       margin: 0px;
+    }
+  ul li { 
+       background-image: url('./images/li.png');
+       background-repeat: no-repeat;
+       background-position: 4px 8px; // 要注意控制图片大小、位置
+       padding-left: 16px;
+       
+    }
+      </code></pre>
+      </div>
+      <p>效果如下：</p>
+      <ul class="imgli">
+        <li>第一项。要注意控制</li>
+        <li>第二项</li>
+      </ul>
+      <p>链接分为四种状态：a:link、a:visiter、a:hover、a:active，都可以设置任何 CSS 样式（颜色、字体、背景等）。</p>
+      <b>设置时必须按照 link、visited、hover、active 顺序。</b><br/>
+      <b>hover 必须在 :link 和 a:visited 之后定义才有效。</b><br/>
+      <b>active 必须在 :hover 之后定义才有效。</b>
+      <h2>列表项标记的位置</h2>
+      <p>通过 list-style-position 属性控制，属性值包括：inside、outside，效果如下：</p>
+      <img src="https://www.runoob.com/wp-content/uploads/2013/08/E3EA5DE4-B898-450C-BE58-D2EBC1C70D8E.jpg" width="350px" alt="菜鸟教程 CSS 列表">
+      <h2>简写属性 list-style</h2>
+      <p>按照顺序依次给出属性值：list-style-type、list-style-position、list-style-image。保持顺序，可部分省略。</p>
+    </body>
+  </head>
+
+</html>

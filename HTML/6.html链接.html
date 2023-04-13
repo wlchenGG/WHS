@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>自强不息，知行合一</title>
+    <!-- <base href="E:/DevelopmentProject/HTML/",target="_blank"/> -->
+  </head>
+  <body>
+    <!-- 这个 HTML 用来演示链接 -->
+    <h1>这个 HTML 用来演示链接</h1>
+    <p> 一个字、几个字、一张图等 html 元素都可以作为超链接</p>
+    <p>我们用 a 标签创建链接，用 href 属性指定链接地址：</p>
+    <h2>多种类型的链接</h2>
+    <p>这个<a href="https://wlcheng.cc/">链接</a>将带你到我的主页。</p>
+    <p>这个图片<a href="https://wlcheng.cc/" id="first"><img decoding="async" src="/images/avatar.png" width="20" height="20"/></a>也将带你到我的主页。</p>
+    <h2>链接标签的属性</h2>
+    <h3>target 属性</h3>
+    <p> target 属性指明将在哪里显示这个链接页面，默认在当前标签页直接跳转，值 "_blank" 表示在浏览器新标签页打开；"_top" 可以跳出当前的框架；"_self" 在同一个窗口打开新的页面；"_parent" 在父窗口中打开新的页面。</p>
+    <p>这个<a href="https://wlcheng.cc/" target="_blank">链接</a>从新标签页打开我的主页。</p>
+    <h3>id 属性</h3>
+    <p> id 给出这个链接内容在当前 html 文档中的唯一标识，可以作为书签来进行引用。</p>
+    <p>比如这个<a href="#C9">链接</a>将跳转到后面章节 9 的位置。</p>
+    <h2>链接到发邮件</h2>
+      <p>这个<a href="mailto:someone@email.com?Subject=Hello20%Friend!",target="_top">链接</a>将调用默认邮件应用，创建发送到 'someone@email.com' 主题为 'Hello Friend!' 的一封邮件。</p>
+      <p>这个<a href="mailto:someone@example.com?cc=someoneelse@example.com&bcc=andsomeoneelse@example.com&subject=Summer%20Party&body=You%20are%20invited%20to%20a%20big%20summer%20party!",target="_top">链接</a>将调用默认邮件应用，创建发送到 'someone@email.com'，抄送到 'someoneelse@example.com'，密件抄送到 'andsomeoneelse@example.com'，主题为 'Summer Party'，内容为 'You are invited to a bug summer party!' 的一封邮件。</p>
+    <h2>章节 3</h2>
+    <p>一个段落</p>
+    <h2>章节 4</h2>
+    <p>一个段落</p>
+    <h2>章节 5</h2>
+    <p>一个段落</p>
+    <h2>章节 6</h2>
+    <p>一个段落</p>
+    <h2>章节 7</h2>
+    <p>一个段落</p>
+    <h2>章节 8</h2>
+    <p>一个段落</p>
+    <h2 id="C9">章节 9</h2>
+    <p>一个段落，一个<a href="#first">链接</a>跳转到上面图片的位置。</p>
+  </body>
+</html>

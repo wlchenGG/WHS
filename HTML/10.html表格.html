@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>这里是页面标题</title>
+
+    <!-- base 指明文档中相对路径的根 -->
+    <!-- <base href="https://wlcheng.cc/" target="_blank"/> -->
+    <!-- link 一般用来引入样式表，也用来引入标题图标 -->
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <link rel="shortcut icon" href="images/avatar.png"/>
+    <!-- style 直接定义文档样式 -->
+    <style type="text/css">
+      thead {color:green;}
+      tbody {color:rgb(43, 113, 225);}
+      tfoot {color:red;}
+      </style>
+  </head>
+  <body>
+    <!-- 这个 HTML 用来演示表格 -->
+    <h1>大标题：这个 HTML 用来演示表格的使用</h1>
+    <h4> 一列:</h4>
+    <table border="1">
+      <tr>
+        <td>100</td>
+      </tr>
+    </table>
+    
+    <h4> 一行三列:</h4>
+    <table border="1">
+      <tr>
+        <td>100</td>
+        <td>200</td>
+        <td>300</td>
+      </tr>
+    </table>
+    
+    <h4> 两行三列:</h4>
+    <table border="1">
+      <tr>
+        <td>100</td>
+        <td>200</td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <td>400</td>
+        <td>500</td>
+        <td>600</td>
+      </tr>
+    </table>
+    <h3>表头</h3>
+    <h4>水平表头:</h4>
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Telephone</th>
+        <th>Telephone</th>
+      </tr>
+      <tr>
+        <td>Bill Gates</td>
+        <td>555 77 854</td>
+        <td>555 77 855</td>
+      </tr>
+      </table>
+
+      <h4>垂直表头:</h4>
+      <table border="1">
+      <tr>
+        <th>First Name:</th>
+        <td>Bill Gates</td>
+      </tr>
+      <tr>
+        <th>Telephone:</th>
+        <td>555 77 854</td>
+      </tr>
+      <tr>
+        <th>Telephone:</th>
+        <td>555 77 855</td>
+      </tr>
+    </table>
+    <h3>表格标题</h3>
+    <table border="1">
+      <caption> 表1. 信息汇总</caption>
+      <tr>
+        <th>Name</th>
+        <th>Telephone</th>
+        <th>Telephone</th>
+      </tr>
+      <tr>
+        <td>Bill Gates</td>
+        <td>555 77 854</td>
+        <td>555 77 855</td>
+      </tr>
+    </table>
+    <h3>跨行、跨列表格</h3>
+    <h4>单元格跨两列：colspan 属性</h4>
+      <table border="1">
+      <tr>
+        <th>Name</th>
+        <th colspan="2">Telephone</th>
+        <th>Nation</th>
+      </tr>
+      <tr>
+        <td>Bill Gates</td>
+        <td>555 77 854</td>
+        <td>555 77 855</td>
+        <td>USA</td>
+      </tr>
+      </table>
+
+      <h4>单元格跨两行：rowspan 属性</h4>
+      <table border="1">
+        <tr>
+          <th>First Name:</th>
+          <td>Bill Gates</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Telephone:</th>
+          <td>555 77 854</td>
+        </tr>
+        <tr>
+          <td>555 77 855</td>
+        </tr>
+      </table>
+      <h3>单元格边距：cellpadding 属性</h3>
+      <table border="1" cellpadding="10">
+        <tr>
+          <th>First Name:</th>
+          <td>Bill Gates</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Telephone:</th>
+          <td>555 77 854</td>
+        </tr>
+        <tr>
+          <td>555 77 855</td>
+        </tr>
+      </table>
+      <h3>单元格间距：cellspacing 属性</h3>
+      <table border="" cellspacing="10">
+        <tr>
+          <th>First Name:</th>
+          <td>Bill Gates</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Telephone:</th>
+          <td>555 77 854</td>
+        </tr>
+        <tr>
+          <td>555 77 855</td>
+        </tr>
+      </table>
+      <h3>colgroup、col 标签进行列设置</h3>
+      <table border="1">
+        <colgroup>
+          <col span="2" style="background-color:red">
+          <col style="background-color:yellow">
+        </colgroup>
+        <tr>
+          <th>ISBN</th>
+          <th>Title</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>3476896</td>
+          <td>My first HTML</td>
+          <td>$53</td>
+        </tr>
+      </table>
+      <h3>thead、tbody、tfoot 标签设置表头、主体、尾行</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Savings</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td>Sum</td>
+            <td>$180</td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td>January</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>February</td>
+            <td>$80</td>
+          </tr>
+        </tbody>
+      </table>
+  </body>
+</html>

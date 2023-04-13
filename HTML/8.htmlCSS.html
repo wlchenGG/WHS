@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>这里是页面标题</title>
+
+    <!-- base 指明文档中相对路径的根 -->
+    <!-- <base href="https://wlcheng.cc/" target="_blank"/> -->
+    <!-- link 一般用来引入样式表，也用来引入标题图标 -->
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <link rel="shortcut icon" href="images/avatar.png"/>
+    <!-- atyle 直接定义文档样式 -->
+    <style type="text/css">
+      body {
+        background-color:rgb(206, 212, 34);
+      }
+      p {
+        color:rgb(212, 0, 255)
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 这个 HTML 用来演示链接 -->
+    <h1>大标题：这个 HTML 用来演示 CSS 的使用</h1>
+    <h2 style="background-color: darkcyan;text-align: center;">标题：内联样式</h2>
+      <p> 上面标题的背景色、居中对齐由其内联 style 属性设置</p>
+      <p style="background-color:skyblue;font-family: 'Times New Roman','楷体';font-size: 23px;">这是一个段落，背景色、字体和字号通过当前段落标签的 内联 style 属性设置。字色由 head 内联样式表设置。</p>
+    <h2 style="text-align: center;">标题：内联样式表</h2>
+      <p>整个文档的段落字体颜色在 head 中通过 style 设置。</p>
+      <p style="color:aquamarine">这个段落字体颜色在此处通过内联 style 设置。覆盖了全局样式表。仅在此元素范围有效。</p>
+    <h2>标题：外部样式表</h2>
+    <pre>这个段落我们尝试
+      用外部样式表设置格式
+    </pre>
+  </body>
+</html>

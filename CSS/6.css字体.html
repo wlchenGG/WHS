@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>演示 CSS 字体相关设置</title>
+    <link rel="stylesheet" type="text/css" href="#">
+    <link rel="shortcut icon" href="./images/avatar.png">
+    <style type="text/css">
+      body {
+        background-color: aliceblue;
+        /* font-size:100%; */
+      }
+
+      #rela {
+        font-size: 100%;
+      }
+      #rela h1 {
+        font-size: 2.5em;
+      }
+      #rela h2 {
+        font-size: 1.875em;
+      }
+      #rela p {
+        font-size: 0.875em;
+      }
+    </style>
+    <body>
+      <h1>CSS 字体相关样式<sup><a href="https://www.runoob.com/css/css-font.html" target="_blank">[1]</a></sup></h1>
+      <h2>字体系列</h2>
+      <p>字体系列分为 serif、sans-serif、monospace 三大类通用系列，每类具有相似的外观特征：</p>
+      <ul>
+        <li>serif：字符末端带边角装饰。如 <span style="font-family: 'Times New Roman', Times, serif;">Times new roman</span>、<span style="font-family: 'Georgia', serif;">Georgia</span>。</li>
+        <li>sans-serif：字符末不端带边角装饰。如 <span style="font-family: Arial, Helvetica, sans-serif;">Arial</span>、<span style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Verdana</span>。</li>
+        <li>monospace：所有等宽字符具有相同宽度。如 <span style="font-family:'Courier New', Courier, monospace;">Courier New</span>、<span style="font-family: 'Lucida Console', monaco, monospace;">Lucida Console</span>。</li>
+      </ul>
+      <h2>字体样式 font-style </h2>
+      <p>字体样式分为 正常（normal）、斜体（italic）、倾斜文本（oblique）：</p>
+      <ul>
+        <li>normal：正常字体，如“<span style="font-style: normal;">这是正常字体</span>”</li>
+        <li>italic：斜体字体，如“<span style="font-style: italic;">这是斜体字体</span>”。斜体字需要字体系列中具有相应的字体才能有效使用。</li>
+        <li>oblique：倾斜字体，如“<span style="font-style: oblique;">这是强制倾斜文字</span>”。当字体系列中没有相应斜体字体（即italic）时，用 oblique 强制倾斜文字。</li>
+      </ul>
+      <h2>字体大小 font-size </h2>
+      <p>字体大小通过 font-size 属性进行设置，常用单位包括：绝对大小 px（像素）、相对大小 em （1em 为当前字体大小，一般来说是 16px ）。</p>
+      <p>在以下几种元素中设置 1.5 em，查看效果：</p>
+      <ul>
+        <li><h1>一级标题默认大小，<span style="font-size: 1.5em;">1.5 em 大小</span></h1></li>
+        <li><h2>二级标题默认大小，<span style="font-size: 1.5em;">1.5 em 大小</span></h2></li>
+        <li><p>段落文字默认大小，<span style="font-size: 1.5em;">1.5 em 大小</span></p></li>
+      </ul>
+      <p>这段文字为正常段落文字大小，在此基础上，通过</p>
+      <p>因为一般不能直接更改浏览器字体绝对大小，通过相对大小单位来设置是有效的。下面这个用法非常有效，可以在任何浏览器都显示相同大小的文本：</p>
+      <div style="display: block; border: solid 1px; width: 100%;">
+        <pre "><code style="font-family: 'Courier New', Courier, monospace; color: red">
+        body {font-size: 100%;}
+        h1 {font-size:2.5em;}
+        h2 {font-size:1.875em;}
+        p {font-size:0.875em;}
+      </code></pre>
+      </div>
+      <p>效果如下：</p>
+      <div id="rela">
+        <h1>一级标题大小：<span style="font-size: 2.5em;">1.5 em 大小</span></h1>
+        <h2>二级标题大小：<span style="font-size: 1.875em;">1.5 em 大小</span></h2>
+        <p>段落文字大小：<span style="font-size: 0.875em;">1.5 em 大小</span></p>
+      </div>
+      <h2>字体粗细 font-weight </h2>
+      <p>通过属性 font-weight 属性设置字体的粗细程度，取值包括预定义关键词 normal、bold、bolder、lighter ，以及从 100 到 900 的整百数字，效果如下：</p>
+      <ul>
+        <li style="font-weight: normal;">normal 正常字体</li>
+        <li style="font-weight: bold;">bold 粗体字符</li>
+        <li style="font-weight: bolder;">bolder 更粗字体</li>
+        <li style="font-weight: lighter;">lighter 更细字体</li>
+        <li style="font-weight: 100;">100 最细字体</li>
+        <li style="font-weight: 400;">400 等同 normal 字体</li>
+        <li style="font-weight: 700;">700 等同 bold 字体</li>
+      </ul>
+      <h2>字体转变 font-variant</h2>
+      <p>可以通过 font-variant 控制字体是否“小型大写”:</p>
+      <ul>
+        <li>正常字体 normal：<span style="font-variant: normal;">The font variant</span>。</li>
+        <li>小型大写字体small-caps ：<span style="font-variant: small-caps;">The font variant</span>。其高矮取决于原字符的大小写。</li>
+      </ul>
+      <h2>简写字体属性 font</h2>
+      <p>可以用 font 属性一起设置以上字体属性。可设置属性（按顺序）：<br/> font-style font-variant font-weight font-size/line-height font-family </p>
+      <p>其中，line-height 是行间距。例 font:italic bold 12px/30px Georgia,serif;</p>
+      <p style="font:italic bold 12px/30px Georgia,serif;">This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.</p>
+      <h2>其他 font 属性值</h2>
+      <ul>
+        <li>caption：<span style="font: caption;">浏览器默认的 caption 控件字体。</span></li>
+        <li>icon：<span style="font: icon;">浏览器默认的 icon 标签字体。</span></li>
+        <li>menu：<span style="font: menu;">浏览器默认的下拉列表字体。</span></li>
+        <li>message-box：<span style="font: message-box;">浏览器默认的对话框字体。</span></li>
+        <li>small-caption：<span style="font: caption;">浏览器默认的 caption 字体的小型版本。</span></li>
+        <li>status-bar 被窗口状态栏使用的字体：<span style="font: status-bar;">浏览器默认的窗口状态栏字体。</span></li>
+      </ul>
+    </body>
+  </head>
+
+</html>

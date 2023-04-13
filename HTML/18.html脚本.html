@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>这里是页面标题</title>
+
+    <!-- base 指明文档中相对路径的根 -->
+    <!-- <base href="https://wlcheng.cc/" target="_blank"/> -->
+    <!-- link 一般用来引入样式表，也用来引入标题图标 -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/mystyle.css"> -->
+    <link rel="shortcut icon" href="images/avatar.png"/>
+    <!-- atyle 直接定义文档样式 -->
+  </head>
+  <body>
+    <!-- 这个 HTML 用来演示脚本 -->
+    <h1>这个 HTML 用来演示脚本</h1>
+    <p>脚本用 script 标签</p>
+    <ul>
+      <li>既可以直接写脚本语句。下面这句用document.write函数输出的内容：<br/>
+        <script>document.write("Hello, I am from a script!")</script>
+      </li>
+      <li>也可以引入外部脚本文件。<br/></li>
+    </ul>
+    <h2>事件响应</h2>
+    <p id="demo">这是原来的句子。</p>
+    <script>
+      function myFunc(){
+        document.getElementById("demo").innerHTML="我是 script 生成的句子";
+      }
+    </script>
+    <script>
+      function changeColor(){
+        dm = document.getElementById("demo");
+        dm.style.color = "#ff0000";
+      }
+    </script>
+    <p>我们在这搞一个按钮，响应点击动作：</p>
+    <button type="button" onclick="myFunc()">点我试试</button>
+    <p>我们再搞一个按钮，响应点击动作，改变文字颜色：</p>
+    <button type="button" onclick="changeColor()">点我试试</button>
+
+  </body>
+</html>

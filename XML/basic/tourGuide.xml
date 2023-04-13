@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE cdCollection [
+  <!ELEMENT cdCollection (cd+)>
+  <!ELEMENT cd (title, artist, year, genre, description)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT artist (#PCDATA)>
+  <!ELEMENT year (#PCDATA)>
+  <!ELEMENT genre (#PCDATA)>
+  <!ELEMENT description (#PCDATA | nowiki)*>
+  <!ELEMENT nowiki (#PCDATA | i | b)*>
+  <!ELEMENT b (#PCDATA)>
+  <!ELEMENT i (#PCDATA)>
+]>
+<cdCollection>
+  <cd>
+    <title>Love. Angel. Music. Baby</title>
+    <artist>Gwen Stefani</artist>
+    <year>2004</year>
+    <genre>pop</genre>
+    <description> This is a great album from former <nowiki>
+        <i></i> singer <b>Gwen Stephani</b>. </nowiki>
+    </description>
+  </cd>
+  <cd>
+    <title>Love. Angel. Music. Baby</title>
+    <artist>Gwen Stefani</artist>
+    <year>2004</year>
+    <genre>pop</genre>
+    <description> This is a great album from former <nowiki>
+        <i>No Doubt</i> singer <b>Gwen Stephani</b>. </nowiki>
+    </description>
+  </cd>
+</cdCollection>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>这是一个标题</title>
+    <link rel="stylesheet" type="text/css" href="./css/mycss4.css">
+    <link rel="shortcut icon" href="./images/avatar.png">
+    <style type="text/css">
+      body {color: rgb(0, 0, 0);}
+      div {
+        border-style: dashed;
+        border-color: rgb(255, 136, 0);
+        width: 600px;
+        text-align: center;
+        background-color: beige;
+      }
+      .divtext {
+        background-color: rgba(193, 72, 159, 0.75);
+        color: rgb(0, 255, 187);
+      }
+      div.small {
+        height: 100px;
+      }
+      div.big {
+        height: 300px;
+        background-image: url('./images/lake.png');
+      }
+      div.attach {
+        height: 200px;
+        background-image: url('./images/lake.png');
+        background-repeat: no-repeat;
+        overflow: auto;
+      }
+      div.pos {
+        width: 400px;
+        height: 200px;
+        background-image: url('./images/lake.png');
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>本 HTML 演示 CSS 背景属性</h1>
+    <hr/>
+    <h2>背景颜色 background-color</h2>
+    <div class="small" style="background-color:rgb(23, 166, 219);">
+      <p class="divtext">设置背景颜色 <br/>
+        background-color: beige;
+      </p>
+    </div>
+    <hr/>
+    <h2>背景图像 background-image</h2>
+    <div class="big">
+      <p class="divtext">设置背景图像 <br/>
+        background-image: url("image.png") <br/> 默认平铺重复，铺满页面
+      </p>
+    </div>
+    <hr/>
+    <h2>图像重复模式 background-repeat: repeat-x|repeat-y|no-repeat </h2>
+    <div class="big" style="background-repeat: repeat-x; ">
+      <p class="divtext">设置背景图像仅横向重复 <br/>
+        background-repeat: repeat-x; 
+      </p>
+    </div>
+    <hr/>
+    <div class="big" style="background-repeat: repeat-y; ">
+      <p class="divtext">设置背景图像仅纵向重复 <br/>
+        background-repeat: repeat-y; 
+      </p>
+    </div>
+    <hr/>
+    <div class="big" style="background-repeat: no-repeat; ">
+      <p class="divtext">设置背景图像不重复 <br/>
+        background-repeat: no-repeat;
+      </p>
+    </div>
+    <hr/>
+    <h2>图像滚动 background-attachment: scroll|fixed|local</h2>
+    <div class="attach" style="background-attachment: scroll; ">
+      <p class="divtext">设置背景图像随页面滚动，是默认值 <br/>
+        background-attachment: scroll;
+      </p>
+      <br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>
+      <p class="divtext">设置背景图像随页面滚动 <br/> 
+        background-attachment: scroll;
+      </p>
+    </div>
+    <hr/>
+    <div class="attach" style="background-attachment: fixed; ">
+      <p class="divtext">设置背景图像不会随着页面的滚动 <br/> 
+        background-attachment: fixed; <br/>
+        如果看不到图像，试着滚动整个页面，而不是这个小框的滚动条。
+      </p>
+      <br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>
+      <p class="divtext">设置背景图像不会随着页面的滚动 <br/> 
+        background-attachment: fixed;
+      </p>
+    </div>
+    <hr/>
+    <div class="attach" style="background-attachment: local; ">
+      <p class="divtext">设置背景图像随着元素内容的滚动而滚动 <br/> 
+        background-attachment: local;
+      </p>
+      <br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>
+      <p class="divtext">设置背景图像随着元素内容的滚动而滚动 <br/> 
+        background-attachment: local;
+      </p>
+    </div>
+    <hr/>
+    <h2>图像位置 background-position </h2>
+    <table>
+      <tr>
+        <td>
+          <div class="pos" style="background-position: left top; ">
+            <p class="divtext">左上 <br/>
+              background-position: left top; 
+            </p>
+          </div>
+        </td>
+        <td>
+          <div class="pos" style="background-position: center top;">
+            <p class="divtext">上中 <br/>
+              background-position: center top; <br/>
+              或 background-position: top;
+            </p>
+          </div>
+        </td>
+        <td>
+          <div class="pos" style="background-position: right top; ">
+            <p class="divtext">右上 <br/>
+              background-position: right top; 
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="pos" style="background-position: left center; ">
+            <p class="divtext">左中 <br/>
+              background-position: left center; <br/>
+              或 background-position: left; 
+            </p>
+          </div>          
+        </td>
+        <td>
+          <div class="pos" style="background-position: center center; ">
+            <p class="divtext">正中 <br/>
+              background-position: center center; <br/>
+              或 background-position: center; 
+            </p>
+          </div>
+        </td>
+        <td>
+          <div class="pos" style="background-position: right center; ">
+            <p class="divtext">右中 <br/>
+              background-position: right center; <br/>
+              或 background-position: right;
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="pos" style="background-position: left bottom; ">
+            <p class="divtext">左下 <br/>
+              background-position: left bottom; 
+            </p>
+          </div>          
+        </td>
+        <td>
+          <div class="pos" style="background-position: center bottom; ">
+            <p class="divtext">下中 <br/>
+              background-position: center bottom; <br/>
+              或 background-position: bottom;
+            </p>
+          </div>
+        </td>
+        <td>
+          <div class="pos" style="background-position: right bottom; ">
+            <p class="divtext">右下 <br/>
+              background-position: right bottom;
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="pos" style="background-position: 10% 80%; ">
+            <p class="divtext">横百分比 纵百分比 <br/>
+              background-position: 10% 80%; 
+            </p>
+          </div>          
+        </td>
+        <td>
+          <div class="pos" style="background-position: 100px 25px; ">
+            <p class="divtext">横坐标 纵坐标 <br/>
+              background-position: 100px 25px; 
+            </p>
+          </div>
+        </td>
+      </tr>
+    </table>
+    
+    <hr/>
+    <h2>背景简写属性 background </h2>
+    <div class="attach" style="background: #af9fcf url('./images/planet.png') no-repeat right top; text-align: left;">
+      按如下顺序依次给出（无需全部给出）：<br/>
+        <ul>
+          <li>background-color</li>
+          <li>background-image</li>
+          <li>background-repeat</li>
+          <li>background-attachment</li>
+          <li>background-position</li>
+        </ul>
+      <p class="divtext">
+        本例：<br/>
+        background: #af9fcf url('./images/planet.png') no-repeat right top;
+      </p>
+      <br/>.<br/>.<br/>.<br/>.<br/>
+      <p class="divtext"> <br/> 
+        background: #af9fcf url('./images/planet.png') no-repeat right top;
+      </p>
+    </div>
+    
+  </body>
+</html>

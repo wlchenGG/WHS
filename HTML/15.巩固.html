@@ -1,0 +1,348 @@
+<!-- 每个 HTML 文档必须在开头指明文件类型。-->
+<!-- html 用于 HTML5 标准。还有其他诸如 1.0 和 4.0 的标准，需要设置成不同的值 -->
+<!DOCTYPE html>
+<!-- html 是任意一个 HTML 文档的根标签。其中包含 head 和 body 标签。-->
+<html>
+  <!-- HTML 文档包含一个 head 头部标签，定义文档的元数据、格式等信息，不会显示到网页中 -->
+  <head>
+    <!-- meta 标签用来设置编码字符集，以及语言-->
+    <meta charset="utf-8" lang="zh-cn">
+    <!-- title 设置页面的标题，也是搜索引擎中搜到结果显示的标题 -->
+    <title>第一次巩固</title>
+    <!-- base 标签指明根目录 -->
+    <!-- <base href="https://wlcheng.cc/" target="_blank"/> -->
+    <!-- link 标签可以设置标题旁的小图标 -->
+    <link rel="shortcut icon" href="./images/avatar.png"/>
+    <!-- link 标签可以用来引入外部样式表 -->
+    <link rel="stylesheet" type="text/css" href="/css/mystyle.css"/>
+    <!-- meta 标签可以设置页面的关键词 -->
+    <meta name="keywords" content="HTML, 知识点">
+    <!-- meta 标签可以设置页面的描述 -->
+    <meta name="description" content="总结 HTML 用法">
+    <!-- meta 标签可以设置页面的作者 -->
+    <meta name="author" content="wlcheng">
+    <!-- meta 标签可以设置页面周期刷新 -->
+    <meta http-equiv="refresh" content="30">
+    <!-- style 标签可以设置页面的内部样式表 -->
+    <style type="text/css">
+      h1 {
+        background-color: rgb(0, 128, 111); 
+        font-family: 楷体;
+      }
+      thead { color:rgb(155, 161, 28); font-weight: 900;}
+      tbody { color:rgb(13, 10, 11); }
+      tfoot { color:rgb(28, 161, 159); }
+    </style>
+  </head>
+  <!-- HTML 文档紧接 head 标签的是 body 标签，这部分的内容会显示到 HTML 网页上 -->
+  <!-- body 内部可以定义很多类型的内容标签，包括但不限于：
+      段落(p)：换行(br/)、横线(hr/)
+      文字格式设置：加粗(b)、斜体(i)、加强(strong，同b)、着重(em，同i)、上\下角标(sup\sub)、
+              删除线(del)、下划线(ins，表示插入文本)、缩写(abbr)、简称(acronym)、方向(dir:ltr|rtl)
+      引用：句引用(q)、段引用(blockquote)
+      标题(h1-h6)：只有 6 个级别的标题。标题能方便搜索引擎建立索引，因此不要用标题来充当
+              加粗文本的作用。
+      预定义格式(pre)：可以按 HTML 源码内容的格式原样显示到页面上，不会删除空白符号
+      链接(a)：可以对任何可见内容添加链接，包括文本、图片等。
+              可链接到发送邮件(mailto、cc、bcc、Subject、Content?)
+      图片(img)：设置 图片位置(href)、无图占位(alt)、宽(width)、高(height)、
+              可为图片创建 map，指定每个像素的链接
+      表格(table)：单元格？属性 cellpadding、单元格间距属性 cellspacing
+        先行 tr：行合并属性(rowspan="2")
+        再列 td：列合并属性(colspan="2")，
+        列组合标签(colgroup)：可逐列设置样式
+        列标签(col)：放到 colgroup 元素内
+      列表：
+        无序列表(ul)：属性 style="list-style-type:disc" 设置前导符样式，'circle|square'
+        有序列表(ol)：属性 type 设置序号样式，'A|a|I|i'
+        列表嵌套
+      框架：需要手动设定样式
+        块框架(div)：有个 float:left 属性
+        内联框架(span)：
+      表单(form)：
+        输入表单(input)：
+          普通输入属性：
+          密码输入属性：
+    除此之外，还有一些标签的属性可以使用，包括但不限于：
+      类属性(class)：可用来定义样式
+      名字属性(name)：
+      唯一ID属性(id)：可用来提供引用位置
+      -->
+  <body>
+    <h1> 巩固整理 HTML 用法</h1>
+    <p float="right">2023.4.5</p>
+    <h2>一、HTML 标题</h2>
+    <p> 共有 6 级标题：</p>
+    <div style='background-color:gray; width:500px; height:300px; '>
+      <h1>一级标题</h1>
+      <h2>二级标题</h2>
+      <h3>三级标题</h3>
+      <h4>四级标题</h4>
+      <h5>五级标题</h5>
+      <h6>六级标题</h6>
+    </div>
+    <hr />
+    <h2 id="para">二、HTML 段落</h2>
+    <div style="background-color:rgb(155, 161, 28); width:500px; height:300px; ">
+      <p>这是一个普通的段落。普通的段落列出了一些普通的文字，没有任何修饰。这是最朴素的文字。</p>
+      <p>这下面用 hr/ 标签显示一条横线，分割后面的内容。</p>
+      <hr />
+      <p><b>格式化文本</b>：这是一个演示格式化文字的段落：<b>加粗 bold</b>、<i>斜体 italic</i>、
+        <strong>着重 strong</strong>、<em>强调</em>、正<sup>上标</sup>正、
+        正<sub>下标</sub>正、<del>删除文本</del>、<ins>下划线</ins>、
+        <abbr title="我是全称">缩写</abbr>、<acronym title="我是全称">简称</acronym>。
+      </p>
+      <p dir="rtl">这是一个普通的段落。但是这是一段从右往左显示的普通段落。</p>
+      <p>这是一段强制换行文本。<br/> 我是被 br/ 强制换到这一行的。</p>
+    </div>
+    <hr />
+    <h2>三、HTML 引用</h2>
+    <div style="background-color:gray; width:500px; height:150px; ">
+      <p><b>内联引用(q)：</b>鲁迅说：<q>横眉冷对千夫指，俯首甘为孺子牛。</q>自动加了一对双引号。</p>
+      <p><b>块引用(blockquote)：</b><blockquote>天行健，君子以自强不息；<br/>地势坤，君子以厚德载物。</blockquote></p>
+    </div>
+    <hr />
+    <h2>四、HTML 预格式段落</h2>
+    <div style="background-color:gray; width:500px; height:300px;">
+      <p><b>普通段落，源码有换行、连续空格、制表符等格式：</b></p>
+      <p style="background-color:rgb(0, 109, 128)">鲁迅说：
+      横眉冷对千夫指，
+      俯首甘为孺子牛。
+      我是换行到下一行的句子。
+      </p>
+      <p><b>预格式(pre)：</b></p>
+      <pre style="background-color:rgb(96, 128, 0)">鲁迅说：   
+      横眉冷对千夫指，
+      俯首甘为孺子牛。
+        我是换行到下一行的句子。
+      </pre>
+    </div>
+    <hr />
+    <h2>五、HTML 图片</h2>
+    <div style="background-color:rgb(160, 240, 233); width:500px; height:750px;">
+      <p>这是一张本地图片：<img src="./images/avatar.png" height="25px"></p>
+      <p>这是一张网络图片：<br/> <img src="https://w.wallhaven.cc/full/4g/wallhaven-4gyly7.jpg" height="160px"></p>
+      <hr/>
+      <p>这是一张浮动在文字左边的图片：<img src="./images/avatar.png" height="25px" alt="头像" style="float:left"></p>
+      <p>这是一张浮动在文字右边的图片：<img src="./images/avatar.png" height="25px" alt="头像" style="float:right"></p>
+      <hr/>
+      <p style="background-color:rgb(171, 160, 240)">这张图片低于文字：<img src="./images/夜空.jpg" height="20px" alt="头像">这是默认</p>
+      <p style="background-color:rgb(171, 160, 240)">这张图片高于文字：<img src="./images/夜空.jpg" height="20px" alt="头像" align="bottom">这是 align="bottom"</p>
+      <p style="background-color:rgb(171, 160, 240)">这张图片低于文字：<img src="./images/夜空.jpg" height="20px" alt="头像" align="middle">这是 align="middle"</p>
+      <p style="background-color:rgb(171, 160, 240)">这张图片对齐文字：<img src="./images/夜空.jpg" height="20px" alt="头像" align="top">这是 align="top"</p>
+      <hr/>
+      <p>这张图片建立了像素map，请点不同位置尝试效果：<br/> <img src="./images/草原.jpg" width="320px" height="180px" alt="蓝天雪山和草原" usemap="#mountainmap"></p>
+      <map name="mountainmap">
+        <area shape="rect" coords="0 0 320 45" alt="蓝天" href="https://w.wallhaven.cc/full/vm/wallhaven-vmwjkl.png">
+        <area shape="rect" coords="0 46 320 125" alt="雪山" href="https://w.wallhaven.cc/full/4g/wallhaven-4gyly7.jpg">
+        <area shape="rect" coords="0 126 320 180" alt="草原" href="https://w.wallhaven.cc/full/nr/wallhaven-nrg96w.jpg">
+      </map>
+    </div>
+    <hr/>
+    <h2>六、HTML 链接</h2>
+    <div style="background-color:rgb(226, 160, 240); padding:0px; width:500px; height:220px;">
+      <p>这个<a href="https://wlcheng.cc/">文字链接</a>将带你到我的主页。</p>
+      <p>这个图片<a href="https://wlcheng.cc/"><img src="./images/avatar.png" height="25px" alt="头像"></a>也将带你到我的主页。</p>
+      <p>这个<a href="#para">链接</a>将带你到前面的第三点，关于段落的知识。</p>
+    </div>
+    <hr/>
+    <h2>七、HTML 表格</h2>
+    <div style="background-color:#a1ceca; padding:10px; width:550px; height:650px;">
+      <table border="1">
+        <tr>
+          <td>行1列1</td>
+        </tr>
+      </table>
+      <table border="1">
+        <tr>
+          <td>行1列1</td>
+          <td>行1列2</td>
+        </tr>
+        <tr>
+          <td>行2列1</td>
+          <td>行2列2</td>
+        </tr>
+      </table>
+      <hr/>
+      <table border="1" style="float:right">
+        <tr>
+          <th>左侧表头1</th>
+          <td>行1列1</td>
+          <td>行1列2</td>
+        </tr>
+        <tr>
+          <th>左侧表头2</th>
+          <td>行2列1</td>
+          <td>行2列2</td>
+        </tr>
+      </table>
+      <table border="1">
+        <tr>
+          <th>上方表头1</th>
+          <th>上方表头2</th>
+        </tr>
+        <tr>
+          <td>行1列1</td>
+          <td>行1列2</td>
+        </tr>
+        <tr>
+          <td>行2列1</td>
+          <td>行2列2</td>
+        </tr>
+      </table>
+      <hr/>
+      <table border="1" style="float:right">
+        <tr>
+          <th>上方表头1</th>
+          <th colspan="2">合并两列</th>
+        </tr>
+        <tr>
+          <td>行1列1</td>
+          <td>行1列2</td>
+          <td rowspan="2">合并两行</td>
+        </tr>
+        <tr>
+          <td>行2列1</td>
+          <td>行2列2</td>
+        </tr>
+      </table>
+      <table border="1">
+        <tr>
+          <td>
+            <table border="1">
+              <tr>
+                <td colspan="2">嵌套表</td>
+              </tr>
+              <tr>
+                <td>行2列1</td>
+                <td>行2列2</td>
+              </tr>
+            </table>
+          </td>
+          <td>一个<a href="https://wlcheng.cc/">链接</a><br/>带个强制换行</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="./images/晚霞.jpg" height="70px" alt="晚霞">
+          </td>
+          <td>
+            <ol type="A" style="font-size: small;">
+              <li>列表项</li>
+              <li>列表项</li>
+              <li>列表项</li>
+            </ol>
+          </td>
+        </tr>
+      </table>
+      <hr/>
+      <table border="1" cellpadding="5" style="float:right">
+        <tr>
+          <td>cellpadding="5"</td>
+          <td>cellpadding="5"</td>
+        </tr>
+        <tr>
+          <td>cellpadding="5"</td>
+          <td>cellpadding="5"</td>
+        </tr>
+      </table>
+      <table border="1" cellspacing="5">
+        <tr>
+          <td>cellspacing="5"</td>
+          <td>cellspacing="5"</td>
+        </tr>
+        <tr>
+          <td>cellspacing="5"</td>
+          <td>cellspacing="5"</td>
+        </tr>
+      </table>
+      <br/>
+      <hr/>
+      <table border="1" style="float:right">
+        <colgroup>
+          <col span="2" style="background-color: rgb(221, 111, 191); color:aquamarine;">
+          <col span="2" style="background-color: rgb(91, 91, 204);">
+          <col span="" style="background-color: rgb(255, 153, 0);">
+        </colgroup>
+        <tr>
+          <th>行1列2</th>
+          <th>行1列1</th>
+          <th>行1列3</th>
+          <th>行1列4</th>
+          <th>行1列5</th>
+        </tr>
+        <tr>
+          <td>行2列1</td>
+          <td>行2列2</td>
+          <td>行2列3</td>
+          <td colspan="2" style="text-align: center;">行2列4</td>
+        </tr>
+        <tr>
+          <td>行3列1</td>
+          <td colspan="3" style="text-align: center;">行3列2</td>
+          <td>行3列4</td>
+        </tr>
+      </table>
+      <table border="1">
+        <thead>
+          <td>thead 1</td>
+          <td>thead 2</td>
+        </thead>
+        <tbody>
+          <tr>
+            <td>tbody 11</td>
+            <td>tbody 12</td>
+          </tr>
+          <tr>
+            <td>tbody 21</td>
+            <td>tbody 22</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <td>tfoot 1</td>
+          <td>tfoot 2</td>
+        </tfoot>
+      </table>
+    </div>
+    <hr/>
+    <h2>八、HTML 列表</h2>
+    <div style="background-color:rgb(44, 200, 125); padding:10px; width:550px; height:250px;">
+      <ol type="I" style="float: right;">
+        <li>希腊列表项</li>
+        <li>还可以拉丁字母 A</li>
+        <li>还可以拉丁字母 a</li>
+        <li>希腊列表项长短不一</li>
+        <li>希腊列表项</li>
+        <li>长短不一</li>
+        <li>希腊列表项</li>
+        <li>还可以希腊字母 i</li>
+        <li>希腊列表项</li>
+        <li>还可以阿拉伯数字 1</li>
+        <li>希腊列表项</li>
+      </ol>
+      <ul style="list-style-type:circle">
+        <li>圈圈列表</li>
+        <li>还可以正方形列表: square</li>
+        <li>圈圈列表</li>
+        <li>圈圈列表</li>
+        <li>圈圈列表</li>
+        <li>圈圈列表</li>
+        <li>圈圈列表</li>
+        <li>圈圈列表</li>
+        <li>圈圈列表</li>
+        <li>圈圈列表</li>
+        <li>圈圈列表</li>
+      </ul>
+    </div>
+    <hr/>
+    <h2>九、HTML 表单</h2>
+    <div style="background-color:rgb(116, 167, 45); padding:10px; width:550px; height:100px;">
+      <form action="">
+        <input type="image" src="./images/夜空.jpg" width="80" name="code" style="float: right;">
+        <input type="text" name="user"><br/>
+        <input type="password" name="password"><br/>
+        <input type="button" value="登录" name="login">
+        <input type="button" value="注册" name="logup">
+      </form>
+    </div>
+  </body>
+</html>

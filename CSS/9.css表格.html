@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>演示 CSS 表格相关设置</title>
+    <link rel="stylesheet" type="text/css" href="#">
+    <link rel="shortcut icon" href="./images/avatar.png">
+    <style type="text/css">
+      body {
+        background-color: aliceblue;
+        /* font-size:100%; */
+      }
+
+    </style>
+    <body>
+      <h1>CSS 表格相关样式<sup><a href="https://www.runoob.com/css/css-table.html" target="_blank">[1]</a></sup></h1>
+      <h2>表格边框 border</h2>
+      <p>通过 border 属性设置，值为：粗细、线型、颜色，比如 border: 1px solid red;</p>
+      <p>如上设置，会使每一个边框线都是双线，即每个单元格都不共用边框线，如下所示：</p>
+      <table border='1px'>
+        <tr>
+          <td>A</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>D</td>
+        </tr>
+      </table>
+      可以通过 border-collapse: collapse 属性设置为单线：
+      <table border='1px' style="border-collapse: collapse;">
+        <tr>
+          <td>A</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>D</td>
+        </tr>
+      </table>
+      <h2>宽高</h2>
+      <p>通过 width 和 height 属性设置即可。</p>
+      <h2>文字对齐</h2>
+      <p>通过 text-align 属性设置水平对齐。取值 left、center、right</p>
+      <p>通过 vertical-align 属性设置垂直对齐。取值 top、middle、bottom</p>
+      <h2>表格填充</h2>
+      <p>文字与单元格边框之间的间距。通过 padding 属性控制。</p>
+      <h2>表格颜色</h2>
+      <p>通过 border 属性设置线颜色、background-color 设置背景颜色。</p>
+    </body>
+  </head>
+
+</html>

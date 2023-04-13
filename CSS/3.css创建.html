@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>这是一个标题</title>
+    <link rel="stylesheet" type="text/css" href="./css/mycss3.css">
+    <link rel="shortcut icon" href="./images/avatar.png">
+    <style type="text/css">
+      body {color: tan;}
+      #para1 { color: green;}
+    </style>
+  </head>
+  <body>
+    <h1>这是一个一级标题</h1>
+    <h2>这是一个二级标题</h2>
+    <p>这是一个普通段落。</p>
+    <a href="https://www.bing.com/" target="_blank">这是一个链接</a>
+    
+    <hr />
+    <h2>外部样式表</h2>
+      <p>在 css 文件中通过选择器定义样式，然后再 html 头部用 link 标签引入 css 文件。</p>
+    <h2>内部样式表</h2>
+      <p id="para1">直接在 head 内以 style 标签的形式进行定义</p>
+    <h2>内联样式</h2>
+      <p style="background-color: aquamarine;">直接在要要设定样式的标签内，以 style 属性的形式进行定义。</p>
+    <h2>多重样式以及优先级</h2>
+    <p>同一个属性可能在不同样式表里同时被定义，此时按照 <b>更具体的优先</b>，<br/>优先级顺序为：<b>内联样式 > 内部样式表 > 外部样式表 > 浏览器默认样式</b></p>
+    <p style="color:red">但是要注意，如果在head内，引入外部样式表的 link 语句在 style 标签后面，那么此时，<b>外部样式表 > 内部样式表</b></p>
+    <h2>CSS 中选择器的优先级</h2>
+    <blockquote>内联样式 > id 选择器 > 类选择器 = 伪类选择器 = 属性选择器 > 标签选择器 = 伪元素选择器 > 通配选择器 <br/> <a href="https://www.runoob.com/w3cnote/css-style-priority.html">参考链接</a> </blockquote>
+    
+  </body>
+</html>

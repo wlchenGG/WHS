@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>演示 CSS 盒子模型</title>
+    <link rel="stylesheet" type="text/css" href="#">
+    <link rel="shortcut icon" href="./images/avatar.png">
+    <style type="text/css">
+      body {
+        background-color: aliceblue;
+        /* font-size:100%; */
+      }
+
+    </style>
+    <body>
+      <h1>CSS 盒子模型<sup><a href="https://www.runoob.com/css/css-boxmodel.html" target="_blank">[1]</a></sup></h1>
+      <p><b>所有 HTML 元素都可以看成盒子。</b>盒子模型包括：边距 margin、边框 border、填充 padding、内容</p>
+      <img src="https://www.runoob.com/images/box-model.gif" alt="菜鸟教程 CSS 盒模型" width="400px">
+      <ul>
+        <li>
+          margin（外边距）：清除边框<b>外</b>的区域，<b>是透明的。</b>
+        </li>
+        <li>
+          border（边框）：内边距与外边距之间的边框。
+        </li>
+        <li>
+          padding（内边距）：清除边框<b>内</b>的区域，<b>是透明的。</b>
+        </li>
+        <li>
+          content（内容）：显示内容主体。
+        </li>
+      </ul>
+      <p>通过 width 和 height 设置的只是内容大小。一个元素占据范围的总大小还包括内外边距、边框的大小，比如：</p>
+      <p> 100 (width) + 20px (左+右填充) + 4px (左+右边框) + 20px (左+右边距) = 144px</p>
+      <h2>CSS 边框 border</h2>
+      <h3>边框样式 border-style</h3>
+      <p>属性值包括：dotted 点线、dashed 虚线、solid 实线、double 双边框、groove 3D沟槽、ridge 3D 脊边槽、inset 3D 嵌入边框、outset 3D 突出边框</p>
+      <p><b>包括四个边框，可以同时分别指定各边框样式：</b></p>
+      <ul>
+        <li>四个值：上、右、底、左</li>
+        <li>三个值：上、左右、底</li>
+        <li>二个值：上底、左右</li>
+        <li>一个值：全部</li>
+      </ul>
+      <b style="color:red;">此种方式也适用于 border-width 和 border-color。需要注意，如果要设置多个边框的多个属性值，需要按边框或者按属性分开设置，不能只用 border 设置。即上面同时为多边框指定不同值的方式只能适用于一个属性。</b>
+      <p style="border:	#ff0000 #00ff00 #0000ff rgb(250,0,255);">一个例子</p>
+      <h3>边框线宽 border-width</h3>
+      <p>属性值包括：thick、medium、thin，或者具体数值。</p>
+      <h3>边框颜色 border-color</h3>
+      <p>按颜色值设置即可。</p>
+      <h3>边框圆角属性 border-radius</h3>
+      
+      <h2>CSS 轮廓 outline</h2>
+      <h2>CSS 外边距 margin</h2>
+      <h2>CSS 填充 padding</h2>
+    </body>
+  </head>
+
+</html>

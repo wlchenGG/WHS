@@ -1,0 +1,14 @@
+h1 {
+  background-color:rgb(34, 212, 141);
+  font-family: 仿宋;
+  text-align: center;
+}
+pre {
+  color:rgba(20, 110, 174, 0.7);
+  text-align: center;
+  font-weight: 800;
+  font-family: 仿宋;
+  font-size: 22px;
+  background-color: rgb(182, 129, 129);
+  border-radius: 20px;
+}
