@@ -7,8 +7,8 @@
     <!-- base 指明文档中相对路径的根 -->
     <!-- <base href="https://wlcheng.cc/" target="_blank"/> -->
     <!-- link 一般用来引入样式表，也用来引入标题图标 -->
-    <link rel="stylesheet" type="text/css" href="css/mystyle_image.css">
-    <link rel="shortcut icon" href="images/avatar.png"/>
+    <link rel="stylesheet" type="text/css" href="./css/mystyle_image.css">
+    <link rel="shortcut icon" href="./images/avatar.png"/>
     <!-- atyle 直接定义文档样式 -->
   </head>
   <body>
@@ -16,30 +16,30 @@
     <h1>大标题：这个 HTML 用来演示图像的使用</h1>
     <h2>不同来源的图像</h2>
     <p>一个来自文件夹的图像：</p>
-    <img src="images/草原.jpg", alt="雪山草原" width="320" height="180">
+    <img src="./images/草原.jpg", alt="雪山草原" width="320" height="180">
     <p>一个来自网络上的图像：</p>
     <img src="https://unsplash.it/1600/900?random", alt="随随便便" width="320" height="180">
 
     <h2>图片与文字对齐方式</h2>
     <h3>默认对齐的图像 (align="bottom"):</h3>
-    <p>这是一些文本。 <img src="images/夜空.jpg" alt="Smiley face" width="32" height="32"> 这是一些文本。</p>
+    <p>这是一些文本。 <img src="./images/夜空.jpg" alt="Smiley face" width="32" height="32"> 这是一些文本。</p>
 
     <h3>图片使用 align="middle":</h3>
-    <p>这是一些文本。 <img src="images/夜空.jpg" alt="Smiley face" align="middle" width="32" height="32">这是一些文本。</p>
+    <p>这是一些文本。 <img src="./images/夜空.jpg" alt="Smiley face" align="middle" width="32" height="32">这是一些文本。</p>
 
     <h3>图片使用 align="top":</h3>
-    <p>这是一些文本。 <img src="images/夜空.jpg" alt="Smiley face" align="top" width="32" height="32">这是一些文本。</p>
+    <p>这是一些文本。 <img src="./images/夜空.jpg" alt="Smiley face" align="top" width="32" height="32">这是一些文本。</p>
 
     <h2>图片浮动位置</h2>
     <p>
-    <img src="images/夜空.jpg" alt="Smiley face" style="float:left" width="32" height="32"> 一个带图片的段落，图片浮动在这个文本的左边。
+    <img src="./images/夜空.jpg" alt="Smiley face" style="float:left" width="32" height="32"> 一个带图片的段落，图片浮动在这个文本的左边。
     </p>
     <p>
-    <img src="images/夜空.jpg" alt="Smiley face" style="float:right" width="32" height="32"> 一个带图片的段落，图片浮动在这个文本的右边。
+    <img src="./images/夜空.jpg" alt="Smiley face" style="float:right" width="32" height="32"> 一个带图片的段落，图片浮动在这个文本的右边。
     </p>
 
     <h2>图像映射：将不同局部设置不同链接</h2>
-    <img src="images/草原.jpg", alt="雪山草原" width="320" height="180", usemap="#mountainmap">
+    <img src="./images/草原.jpg", alt="雪山草原" width="320" height="180", usemap="#mountainmap">
 
     <map name="mountainmap">
       <area shape="rect" coords="0 0 320 45" alt="蓝天" href="https://w.wallhaven.cc/full/vm/wallhaven-vmwjkl.png">
