@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>演示 CSS 定位相关设置</title>
+    <link rel="stylesheet" type="text/css" href="#">
+    <link rel="shortcut icon" href="./images/avatar.png">
+    <style type="text/css">
+      body {
+        background-color: aliceblue;
+        /* font-size:100%; */
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      span {
+        outline: 2px dotted red;
+      }
+      .inl {
+        display: inline;
+      }
+
+    </style>
+    <body>
+      <h1>CSS 定位相关样式<sup><a href="https://www.runoob.com/css/css-positioning.html" target="_blank">[1]</a></sup></h1>
+      <p>定位相关的属性包括：</p>
+      <ul>
+        <li class="inl"><a href="#position">position</a>、</li>
+        <li class="inl"><a href="#tblr">top</a>、</li>
+        <li class="inl"><a href="#tblr">bottom</a>、</li>
+        <li class="inl"><a href="#tblr">left</a>、</li>
+        <li class="inl"><a href="#tblr">right</a>、</li>
+        <li class="inl"><a href="#z-index">z-index</a>、</li>
+        <li class="inl"><a href="#clip">clip</a>、</li>
+        <li class="inl"><a href="#cursor">cursor</a>、</li>
+        <li class="inl"><a href="#overflow">overflow</a>、</li>
+        <li class="inl"><a href="#overflow-x">overflow-x</a>、</li>
+        <li class="inl"><a href="#overflow-y">overflow-y</a></li>
+      </ul>
+      <hr/>
+      <h2 id="position">元素定位属性 position</h2>
+      <ul>
+        <li>position: static; 默认值。没有特殊定位，就是一个普通的文档流内容，随着内容上下滚动而滚动。</li>
+        <li>position: fixed; 固定位置。相对于浏览器窗口固定位置。不会随着内容一起上下滚动。不占据文档流空间，因此会与文档流内容重叠。</li>
+        <li>position: relative; 相对位置。相对于这个元素正常位置的相对位置，与 top、bottom、left、right 一起使用来控制偏移距离。属于文档流，且仍然占据其正常位置的空间，而相对位置处不占用空间，可能会与文档流其他内容重叠。</li>
+        <li>position: absolute; 绝对位置。相对于最近的有定位父元素的位置，且不会随着内容一起上下滚动。不占据文档流空间，会与文档流内容重叠。</li>
+        <li>position: sticky; 粘性位置。行为取决于滚动位置，在 relative 和 absolute 之间切换。当页面滚动跨域某个阈值前，是 relative，跨域后就是 fixed，这个阈值由 top、bottom、left、right 来指定，<span style="color: red;">且必须指定</span>，否则就只是 relative 效果。</li>
+      </ul>
+      <h2 id="tblr">四边定位属性 top bottom left right</h2>
+      <p>定义元素外边界相对于其包含元素对应边界的偏移。</p>
+      <p>同时需要指定定位类型。定位类型为 static 时，四边定位无效。定位类型为 relative 时，四边定位是相对于自身正常位置对应边界的偏移。定位类型为 absolute 时，四边定位是相对于其包含元素对应边界的偏移。</p>
+      <h2 id="z-index">元素堆叠顺序属性 z-index</h2>
+      <h2 id="clip">剪辑一个绝对定位元素 clip</h2>
+      <h2 id="cursor">光标移动到的显示样式 cursor</h2>
+      <h2 id="overflow">内容溢出时如何处理 overflow</h2>
+      <h3 id="overflow-x">左右溢出时如何处理 overflow-x</h3>
+      <h3 id="overflow-y">上下溢出时如何处理 overflow-y</h3>
+
+    </body>
+  </head>
+
+</html>

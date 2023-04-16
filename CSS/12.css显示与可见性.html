@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>演示 CSS 显示相关设置</title>
+    <link rel="stylesheet" type="text/css" href="#">
+    <link rel="shortcut icon" href="./images/avatar.png">
+    <style type="text/css">
+      body {
+        background-color: aliceblue;
+        /* font-size:100%; */
+      }
+      span {
+        outline: 2px dotted red;
+      }
+      #normal {
+        display: inline;
+      }
+      #dis {
+        display: none;
+      }
+      #vis {
+        visibility: hidden; 
+      }
+    </style>
+    <body>
+      <h1>CSS 显示相关样式<sup><a href="https://www.runoob.com/css/css-display-visibility.html" target="_blank">[1]</a></sup></h1>
+      <p>属性 display 指定元素如何显示。</p>
+      <p>属性 visibility 指定元素是否隐藏。</p>
+      <h2>隐藏元素</h2>
+      <p>display 和 visibility 都可以用来隐藏元素，但效果不同：</p>
+      <ul>
+        <li>display: none; - 隐藏元素的同时，在页面上也不会占据位置空间。</li>
+        <li>visibility: hidden; - 隐藏元素的同时，在页面上仍然占据位置空间。</li>
+      </ul>
+      <table border="1px" style="border-collapse: collapse;">
+        <tr>
+          <td><p>不隐藏：<br/>外面<span id="normal">隐藏</span>外面</p></td>
+          <td><p>display: none;<br/>外面<span id="dis">隐藏</span>外面</p></td>
+          <td><p>visibility: hidden;<br/>外面<span id="vis">隐藏</span>外面</p></td>
+        </tr>
+      </table>
+      <p>控制表格中某行列隐藏可以用 display: none; 或者 visibility: collapse; 这样能保证表格外边框自动调整。如果用 visibility: hidden; 则隐藏的单元格会空白一块。</p>
+      <h2>改变块级或内联显示</h2>
+      <p>块元素：占用全部宽度，前后都有换行符。比如 h1、p、div</p>
+      <p>内联元素：占用必要宽度，不自动换行。比如 span、a、img</p>
+      <p>可以通过 display 改变元素以块级或者内联形式显示：</p>
+      <ul>
+        <li>display: inline; 内联显示。比如可以将列表项显示在同一行。</li>
+        <li>display: block; 块级显示。</li>
+      </ul>
+    </body>
+  </head>
+
+</html>
